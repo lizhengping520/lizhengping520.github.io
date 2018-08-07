@@ -49,7 +49,10 @@
                 </div>
                 <canvas id="canvas" width="1100" height="680"></canvas>
             </div>
-            <embed src="bg.mp3" autostart="true" loop="true" hidden="true"></embed>
+            <!-- <embed src="bg.mp3" autostart="true" loop="true" hidden="true"></embed> -->
+            <video src="bg.mp3" controls="controls" autoplay="autoplay" hidden="hidden" id="music">
+                <!-- <audio src="bg.mp3" controls="controls" loop="loop" autoplay="autoplay"> -->
+
         </div>
     
     <script>
@@ -214,7 +217,11 @@
         runAsync().start();
     })();
     </script>
-
+<script type="text/javascript">
+    $(function(){
+        $("#music").play();
+    })
+</script>
 
 
 </body></html>
